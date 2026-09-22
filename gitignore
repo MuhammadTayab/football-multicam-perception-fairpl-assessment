@@ -1,0 +1,21 @@
+# Footage — never commit (source clips show minors, kept local by design)
+videos/*.mp4
+videos/**/*.mp4
+*.mp4
+*.mov
+*.avi
+*.mkv
+
+# Result videos (shared privately, not in the public repo)
+FootageResults/*.mp4
+FootageResults/*.csv
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+.DS_Store
+
+# NOTE: images are intentionally NOT ignored — training curves, confusion
+# matrices, and diagram PNG/JPG files are kept in the repo.

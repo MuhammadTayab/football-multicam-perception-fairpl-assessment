@@ -1,0 +1,5 @@
+This folder is supposed to contain synced left and right videos and their extracted clips.
+left_sync.mp4 # original synced full video
+right_sync.mp4  # original synced full video
+left_sync_clip.mp4 # extracted synced left clip, used for showing results
+right_sync_clip.mp4 # extracted synced right clip, used for showing results

@@ -1,0 +1,5 @@
+Put your original left.mp4, right.mp4 and broadcast_clip.mp4 videos in this folder.
+left.mp4
+right.mp4
+broadcast.mp4
+broadcast_clip.mp4

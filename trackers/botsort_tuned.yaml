@@ -1,0 +1,20 @@
+# botsort_reid.yaml — BoT-SORT with appearance ReID enabled and tuned for football
+tracker_type: botsort
+
+# association thresholds
+track_high_thresh: 0.5      # first-round association conf
+track_low_thresh: 0.1       # keep low-conf boxes (ByteTrack idea) to survive occlusion
+new_track_thresh: 0.6       # conf needed to start a NEW track (higher = fewer spurious new IDs)
+track_buffer: 90            # frames to keep a lost track alive before deleting (was ~30). At 45fps this is ~1.3s
+match_thresh: 0.8           # IoU match threshold for association
+
+# camera motion compensation
+gmc_method: sparseOptFlow
+
+# ---- appearance / ReID (the key change) ----
+with_reid: true             # ENABLE appearance model  <-- this was off by default
+model: auto                 # use the built-in ReID feature extractor
+proximity_thresh: 0.5       # min IoU proximity to even consider an appearance match
+appearance_thresh: 0.4     # appearance similarity threshold (lower = more permissive re-linking)
+fuse_score: true
+

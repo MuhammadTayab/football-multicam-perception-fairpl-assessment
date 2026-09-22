@@ -1,0 +1,8 @@
+# data.yaml
+path: <root_path>   # the folder containing train/ valid/ test/
+train: train/images
+val: valid/images
+test: test/images
+
+nc: 1
+names: ["ball"]
